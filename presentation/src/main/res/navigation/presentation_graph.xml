@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@id/onboarding_fragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.oguzhan.presentation.home.HomeFragment"
+        tools:layout="@layout/fragment_home"
+        android:label="Home">
+       <!-- <action
+            android:id="@+id/action_homeFragment_to_detailsFragment"
+            app:destination="@id/detailsFragment" />-->
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboarding_fragment"
+        android:name="com.oguzhan.presentation.onboarding.OnboardingFragmentFirst"
+        android:label="Onboarding1"
+        tools:layout="@layout/fragment_onboarding" >
+        <action
+            android:id="@+id/action_onboarding_fragment_to_onboarding_fragment_second"
+            app:destination="@id/onboarding_fragment_second" />
+    </fragment>
+    <fragment
+        android:id="@+id/onboarding_fragment_second"
+        android:name="com.oguzhan.presentation.onboarding.OnboardingFragmentSecond"
+        android:label="Onboarding2"
+        tools:layout="@layout/fragment_onboarding_second" >
+        <action
+            android:id="@+id/action_onboarding_fragment_second_to_onboarding_fragment_third"
+            app:destination="@id/onboarding_fragment_third" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboarding_fragment_third"
+        android:name="com.oguzhan.presentation.onboarding.OnboardingFragmentThird"
+        android:label="Onboarding3"
+        tools:layout="@layout/fragment_onboarding_third" >
+        <action
+            android:id="@+id/action_onboarding_fragment_third_to_onboarding_fragment_paywall"
+            app:destination="@id/onboarding_fragment_paywall" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/onboarding_fragment_paywall"
+        android:name="com.oguzhan.presentation.onboarding.OnboardingFragmentPaywall"
+        android:label="Onboarding4"
+        tools:layout="@layout/fragment_onboarding_paywall" >
+        <action
+            android:id="@+id/action_onboarding_fragment_paywall_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
+
+
+
+
+</navigation>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".onboarding.OnboardingFragmentFirst">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/onboarding1_background">
+
+        <TextView
+            android:id="@+id/h1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="66dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/roboto_regular"
+            android:lineHeight="32.81sp"
+            android:text="@string/welcome_message"
+            android:textColor="@color/c2"
+            android:textSize="28sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/roboto_regular"
+            android:lineHeight="22sp"
+            android:text="@string/welcome_message_desc"
+            android:textColor="@color/c1"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/h1" />
+
+        <ImageView
+            android:id="@+id/img_onboarding"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="196dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/img_onboarding1"
+            app:layout_constraintBottom_toTopOf="@id/btn_get_started"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+             />
+
+        <Button
+            android:id="@+id/btn_get_started"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:layout_margin="20dp"
+            android:background="@drawable/button_shape"
+            android:minWidth="320dp"
+            android:text="@string/get_started"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@id/terms_privacy"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/terms_privacy"
+            android:layout_width="232dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:fontFamily="@font/roboto_regular"
+            android:gravity="center"
+            android:lineHeight="15sp"
+            android:text="@string/terms_and_privacy"
+            android:textColor="@color/gray_1"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

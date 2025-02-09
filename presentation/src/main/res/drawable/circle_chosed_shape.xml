@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Dış Katman (Yeşil Border) -->
+    <item>
+        <shape
+            android:shape="oval">
+            <solid android:color="#28AF6E"/> <!-- Dış kenar için yeşil renk -->
+        </shape>
+    </item>
+
+    <!-- İç Katman (Beyaz İç Kısım) -->
+    <item android:left="180dp" android:right="180dp" android:top="180dp" android:bottom="180dp">
+        <shape android:shape="oval">
+            <solid android:color="#FFFFFF"/> <!-- İç kısmı beyaz (8% opak) -->
+        </shape>
+    </item>
+
+</layer-list>

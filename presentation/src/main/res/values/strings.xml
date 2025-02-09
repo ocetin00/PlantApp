@@ -1,0 +1,38 @@
+<resources>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="welcome_message">Welcome to <b>PlantApp</b>.</string>
+    <string name="welcome_message_desc">Identify more than 3000+ plants and 88% accuracy.</string>
+    <string name="get_started">Get Started</string>
+    <string name="try_for_free">Try free for 3 days</string>
+    <string name="save_50">Save 50%</string>
+    <string name="next">Continue</string>
+    <string name="terms_and_privacy">
+    By tapping next, you are agreeing to PlantID <u>Terms of Use</u> &amp; <u>Privacy Policy.</u>
+</string>
+    <string name="subscription_detail">After the 3-day free trial period you’ll be charged ₺274.99 per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable</string>
+    <string name="subscription_detail_second">Terms &#8226; Privacy &#8226; Restore</string>
+
+    <string name="onboarding2_title">Take a photo to <b>identify</b> the plant!</string>
+    <string name="onboarding3_title">Get plant <b>care guides</b></string>
+    <string name="paywall_title">Get plant <b>care guides</b></string>
+    <string name="paywall_desc">Access All Features</string>
+
+    <string name="unlimited">Unlimited</string>
+    <string name="faster">Faster</string>
+    <string name="identify">Plant Identify</string>
+    <string name="process">Process</string>
+    <string name="one_month">1 Month</string>
+    <string name="one_year">1 Year</string>
+    <string name="one_year_desc">First 3 days free, then $529,99/year</string>
+    <string name="one_month_desc">$2.99/month, <b>auto renewable</b></string>
+
+
+    <string name="hi_plant_lover">Hi, plant lover!</string>
+    <string name="good_afternoon">Good Afternoon! ⛅</string>
+    <string name="search_for_plants">Search for plants</string>
+    <string name="free_premium_available"><b>FREE</b> Premium Available</string>
+
+
+</resources>
