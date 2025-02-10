@@ -159,6 +159,7 @@ hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.re
 androidx-hilt-navigation-compose = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "androidxHiltNavigationCompose" }
 #Coil
 coil-kt-compose = { module = "io.coil-kt:coil-compose", version.ref = "coil" }
+coil = { module = "io.coil-kt:coil", version.ref = "coil" }
 #Firebase
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 firebase-auth = { module = "com.google.firebase:firebase-auth" }

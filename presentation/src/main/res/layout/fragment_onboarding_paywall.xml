@@ -285,7 +285,7 @@
         </FrameLayout>
 
         <Button
-            android:id="@+id/btn_get_started"
+            android:id="@+id/btn_finish"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:layout_marginTop="20dp"

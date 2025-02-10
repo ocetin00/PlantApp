@@ -10,7 +10,6 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-
         <LinearLayout
             android:id="@+id/home_header"
             android:layout_width="match_parent"
@@ -47,7 +46,6 @@
                 android:id="@+id/searchEditText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:minHeight="48dp"
                 android:layout_marginTop="16dp"
                 android:background="@drawable/edit_text_background"
                 android:drawableStart="@drawable/search_img"
@@ -56,6 +54,7 @@
                 android:letterSpacing="0.045"
                 android:lineHeight="18.37sp"
                 android:minWidth="320dp"
+                android:minHeight="48dp"
                 android:paddingHorizontal="12dp"
                 android:paddingVertical="12dp"
                 android:textColor="@android:color/black"
@@ -64,39 +63,46 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
-
         </LinearLayout>
 
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/premiumLayout"
             android:layout_width="match_parent"
             android:layout_height="64dp"
             android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="24dp"
             android:layout_marginRight="8dp"
             android:background="@drawable/premium_background_shape"
-            android:gravity="center"
+            android:gravity="start"
             android:minWidth="327dp"
             android:minHeight="63dp"
-            android:orientation="horizontal"
             android:paddingVertical="12dp"
             android:paddingLeft="16dp"
             android:paddingRight="10dp"
             app:layout_constraintTop_toBottomOf="@+id/home_header">
 
             <ImageView
-                android:layout_width="35dp"
-                android:layout_height="31dp"
+                android:id="@+id/imageView"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
                 android:layout_gravity="center_vertical"
                 android:scaleType="fitCenter"
-                android:src="@drawable/icon_message" />
+                android:src="@drawable/msg_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
             <LinearLayout
+                android:id="@+id/linearLayout"
                 android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="16dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
                 android:gravity="center_vertical"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imageView"
+                app:layout_constraintTop_toTopOf="parent">
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -119,28 +125,45 @@
             </LinearLayout>
 
             <ImageView
+                android:id="@+id/imageView2"
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center_vertical"
-
                 android:scaleType="centerCrop"
-                android:src="@drawable/icon_right_arrow" />
-        </LinearLayout>
+                android:src="@drawable/icon_right_arrow"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewQuestins"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/premiumLayout"
+            tools:listitem="@layout/question_item" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerViewCategories"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/recyclerViewQuestins"
+            tools:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/category_item"
+            tools:spanCount="2" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-    <!-- Bottom Navigation Bar -->
-<!--    <com.google.android.material.bottomappbar.BottomAppBar
-        android:id="@+id/bottom_navigation"
-        android:layout_width="0dp"
-        android:layout_height="56dp"
-        app:backgroundTint="@color/white"
-        app:itemIconTint="@color/green_1"
-        app:itemTextColor="@color/green_1"
-        app:labelVisibilityMode="labeled"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:menu="@menu/bottom_navigation_menu"
-        tools:menu="@menu/bottom_navigation_menu" />-->
+
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

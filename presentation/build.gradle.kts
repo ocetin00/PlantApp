@@ -89,6 +89,9 @@ dependencies {
     ksp(libs.androidx.hilt.hilt.compiler)
 
 
+    implementation("com.github.Dimezis:BlurView:version-2.0.6")
+    implementation(libs.coil)
+
     implementation("com.github.wonderkiln:blurkit-android:1.1.1")
 
 }

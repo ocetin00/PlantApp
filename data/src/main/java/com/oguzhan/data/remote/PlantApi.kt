@@ -13,5 +13,5 @@ interface PlantApi {
     suspend fun getCategories(): ApiResponse<Category>
 
     @GET(Questions)
-    suspend fun getQuestions(): ApiResponse<Question>
+    suspend fun getQuestions(): ApiResponse<List<Question>>
 }

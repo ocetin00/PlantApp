@@ -14,10 +14,8 @@
  * limitations under the License.
  */
 
-package com.fordotosan.fordrewards.di.dispatchers
+package com.oguzhan.core.di.dispatchers
 
-import com.oguzhan.core.di.dispatchers.PlantDispatchers
-import com.oguzhan.core.di.dispatchers.Dispatcher
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

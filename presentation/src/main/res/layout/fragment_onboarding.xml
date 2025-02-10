@@ -63,6 +63,7 @@
             android:layout_width="0dp"
             android:layout_height="56dp"
             android:layout_margin="20dp"
+            android:stateListAnimator="@null"
             android:background="@drawable/button_shape"
             android:minWidth="320dp"
             android:text="@string/get_started"

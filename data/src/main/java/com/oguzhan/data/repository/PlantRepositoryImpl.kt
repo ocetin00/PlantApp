@@ -22,7 +22,8 @@ class PlantRepositoryImpl @Inject constructor(private val plantApi: PlantApi) : 
         }
     }
 
-    override suspend fun fetchPlantsQuestions(): Result<QuestionDomainModel> {
+    override suspend fun fetchPlantsQuestions(): Result<List<QuestionDomainModel>>
+    {
         return when (val apiResult = plantApi.getQuestions()) {
             is ApiResponse.Success -> {
                 Result.success(apiResult.data.toDomainModel())

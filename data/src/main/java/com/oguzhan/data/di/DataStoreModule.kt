@@ -8,7 +8,7 @@ import androidx.datastore.preferences.core.PreferenceDataStoreFactory
 import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.emptyPreferences
 import androidx.datastore.preferences.preferencesDataStoreFile
-import com.fordotosan.fordrewards.di.dispatchers.ApplicationScope
+import com.oguzhan.core.di.dispatchers.ApplicationScope
 import com.oguzhan.core.di.dispatchers.Dispatcher
 import com.oguzhan.core.di.dispatchers.PlantDispatchers
 import dagger.Module

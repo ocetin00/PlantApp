@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="240dp"
+    android:layout_height="164dp"
+    android:layout_marginEnd="10dp"
+   >
+
+    <ImageView
+        android:id="@+id/question_image"
+        android:layout_width="240dp"
+        android:layout_height="164dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/dumy_img" />
+
+    <FrameLayout
+        android:id="@+id/question_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- BlurView (Sadece Arka Planı Blur Yapacak) -->
+        <!--<eightbitlab.com.blurview.BlurView
+            android:id="@+id/blurView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+           app:blurOverlayColor="@color/white"
+            android:layout_gravity="bottom">
+        </eightbitlab.com.blurview.BlurView>-->
+
+        <LinearLayout
+            android:layout_width="240dp"
+            android:layout_height="60dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/border_top"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/question_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_regular"
+                android:lineHeight="20sp"
+                android:text="@string/how_to_identify_plants_easily_with_plantapp"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

@@ -5,5 +5,5 @@ import com.oguzhan.domain.model.QuestionDomainModel
 
 interface PlantRepository {
     suspend fun fetchCategories(): Result<CategoryDomainModel>
-    suspend fun fetchPlantsQuestions(): Result<QuestionDomainModel>
+    suspend fun fetchPlantsQuestions(): Result<List<QuestionDomainModel>>
 }

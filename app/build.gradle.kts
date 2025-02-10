@@ -129,9 +129,6 @@ dependencies {
     androidTestImplementation(libs.hilt.android.testing)
 
 
-    //Coil
-    implementation(libs.coil.kt.compose)
-
 
     //Mockk
     testImplementation(libs.mockk)
