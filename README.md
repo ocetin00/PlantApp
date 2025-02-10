@@ -1,7 +1,7 @@
 <!-- README.md -->
 
 <h1 align="center">Plant - Android App</h1>
-<p align="center"> <strong>Plant App</strong> built with XML MVVM modular architecture, Jetpack Libraries(viewmodel,navigation,dataStore) and Hilt.</p>
+<p align="center"> <strong>Plant App</strong> built with XML, MVVM, Layered Modular Architecture, Jetpack Libraries(viewmodel,navigation,dataStore) and Hilt.</p>
 
 ## Some images on diffrent size emulator ✅ 
 ![img1](https://github.com/ocetin00/temp/blob/main/Screenshot%202025-02-10%20at%2003.37.26.png)
