@@ -4,6 +4,7 @@
 <p align="center"> <strong>Plant App</strong> built with XML MVVM modular architecture, Jetpack Libraries(viewmodel,navigation,dataStore) and Hilt.</p>
 
 ## Some images on diffrent size emulator ✅ 
+![img1](https://github.com/ocetin00/temp/blob/main/Screenshot%202025-02-10%20at%2003.37.26.png)
 
 
 ## Features ✅ 
@@ -58,14 +59,15 @@
 
 The project follows **MVVM (Model-View-ViewModel) architecture** with **View Binding**:
 
+![module](https://github.com/ocetin00/temp/blob/main/Screenshot%202025-02-10%20at%2003.25.06.png)
 
 
 ## ⚙️ Setup & Installation
 
 Clone this repository:
 ```bash
-git clone https://github.com/yourusername/CryptoTracker.git
-cd CryptoTracker
+git clone https://github.com/ocetin00/PlantApp.git
+cd PlantApp
 ```
 
 ### 🏗 Prerequisites
