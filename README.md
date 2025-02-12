@@ -87,7 +87,7 @@ or directly run from **Android Studio**.
 
 ##  Things I Planned But Couldn't Implement Because Of Time
 
-- **UI/Unit Test** for price alerts 
+- **UI/Unit Test** 
 - **Featured and Layered based architecture(For now just Layered)**
 - **Blur effect same places**
 - **Text gradient for some TextView**
